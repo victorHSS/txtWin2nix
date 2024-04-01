@@ -26,7 +26,7 @@ backup=0
 
 for arq
 do
-	(( backup == 1 )) && cp $arq "$arq"~
-	sed -i 's/\cM// ' $arq
+	(( backup == 1 )) && cp "$arq" "$arq"~
+	sed -i 's/\cM// ' "$arq"
 done
 
